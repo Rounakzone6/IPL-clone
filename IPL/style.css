@@ -1,0 +1,1828 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;800&family=Rubik:wght@300;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.top-head{
+    width: 100%;
+    height: 40px;
+    top: 0;
+    background-color: #061e59;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.first{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 70px;
+}
+.bcci{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-right: 1px solid black;
+}
+.bcci img{
+    height: 23px;
+}
+.bcci a{
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+    padding: 0 15px 0 5px;
+    color: #fff;
+}
+.cricket{
+    padding-left: 15px;
+}
+.social{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 60px;
+    color: (255,255,255,.3);
+}
+.social img{
+    padding-left: 10px;
+    border: 0;
+    background: none;
+    opacity: 0.3;
+}
+.social span{
+    font-size: 14px;
+    font-weight: bold;
+    color: rgba(255,255,255,.3);
+    font-family: 'Rubik', sans-serif;
+    margin-right: 10px;
+    margin-top: 1px;
+    display: block!important;
+}
+.nav-bar-sticky{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+.nav-bar{
+    background: url("https://www.iplt20.com/assets/images/header-curl-bg.svg") right/contain no-repeat,url("https://www.iplt20.com/assets/images/header-rotate.png") left/contain no-repeat #19398a;
+    box-shadow: 0 4px 8px 0 hsl(0deg 0% 7% / 50%);
+    height: 63px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.img img{
+    height: 47px;
+}
+.nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+}
+.nav ul li{
+    padding-left: 30px;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+.pols{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 25px;
+}
+.pols img{
+    padding-left: 40px;
+    height: 22px;
+}
+.down-arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.down-arrow i{
+    color: white;
+    padding-left: 5px;
+    font-size: 10px;
+}
+.sub-nav{
+    display: none;
+    z-index: 1;
+}
+.down-arrow:hover .sub-nav{
+    display: block;
+    position: absolute;
+    background: #fff;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-top: 250px; 
+    padding-bottom: 4px;
+}
+.down-arrow:hover .sub-nav ul{
+    display: block;
+    margin: 3px;
+}
+.down-arrow:hover .sub-nav ul li{
+    padding: 10px;
+}
+.sub-nav ul li{
+    width: 200px;
+    border-bottom: 1px solid black;
+}
+.sub-nav ul li a{
+    background-color: orangered;
+    padding: 10px 30px 0 0;
+    color: black;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+.sub-nav ul li a:hover{
+    color: white;
+    color: black;
+}
+.some{
+    background-color: #10172B;
+}
+.slider{
+    max-width: 65vw;
+    height: 470px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+.list{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    width: max-content;
+    transition: 1s;
+}
+.item{
+    width: 100%;
+    height: 470px;
+}
+.item img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.buttons{
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.buttons button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(26, 26, 26, 0.333);
+    color: #fff;
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 30px;
+}
+.dots{
+    position: absolute;
+    bottom: 10px;
+    color: #fff;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.dots li{
+    list-style-type: none;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    margin: 20px 5px;
+    border-radius: 20px;
+    transition: 1s;
+}
+.dots li.active{
+    width: 30px;
+}
+@media screen and (max-width:768px){
+    .slider{
+        height: 400px;
+    }
+}
+.good-morning{
+    padding-block: 50px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    background: url("https://www.iplt20.com/assets/images/story-helix-bg.svg") top center no-repeat #10172b;
+}
+.good{
+    margin: auto;
+    max-width: 90vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.arrows{
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: white;
+    height: 20%;
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+.morning p{
+    font-size: 12px;
+    color: rgba(255,255,255,.7);
+}
+.morning h3{
+    font-size: 18px;
+    font-style: italic;
+    color: #fff;
+    font-weight: 600;
+    font-family: 'Rubik', sans-serif; 
+}
+.points h1{
+    font-size: 30px;
+    font-style: italic;
+    color: black;
+    font-weight: 600;
+    font-family: 'Rubik', sans-serif; 
+}
+.photos{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 80%;
+    gap: 10px;
+}
+.arrow{
+    padding-right: 20px;
+}
+.arrow img{
+    padding-left: 16px;
+}
+.arrows img:hover{
+    opacity: .75;
+    color: white;
+}
+.arrow-points{
+    padding-right: 20px;
+    padding-right: 20px;
+}
+.arrow-points img{
+    padding-left: 8px;
+}
+.arrow-points-left{
+    transform: rotate(180deg);
+}
+.arrows-points img:hover{
+    opacity: .75;
+    color: black;
+}
+.sec-1{
+    font-family: 'Rubik', sans-serif; 
+    width: 12%;
+    height: 100%;
+}
+.content{
+    font-size: 14px;
+    color: #fff;
+    font-weight: 400;
+    margin-top: 10px;
+    text-align: center;
+}
+.square-1{
+    transition: .3s;
+    cursor: pointer;
+    background: url("https://bcciplayerimages.s3.ap-south-1.amazonaws.com/bcci/story/1703145442_200x200_91803_1703145442.png");
+    background-position: center;
+    background-repeat: no-repeat;   
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    background-size: cover;
+}
+.square{
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #fff;
+}
+.square:hover{
+    border-color: red;
+    border-style: dashed;
+}
+.square-1:hover{
+    transform: scale(0.92);
+}
+.square-2:hover{
+    transform: scale(0.92);
+}
+.square-3:hover{
+    transform: scale(0.92);
+}
+.square-4:hover{
+    transform: scale(0.92);
+}
+.square-5:hover{
+    transform: scale(0.92);
+}
+.square-6:hover{
+    transform: scale(0.92);
+}
+.square-7:hover{
+    transform: scale(0.92);
+}
+.square-8:hover{
+    transform: scale(0.92);
+}
+.square-2{
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    transition: .3s;
+    background: url("https://bcciplayerimages.s3.ap-south-1.amazonaws.com/bcci/story/1685368319_200x200_25300_1685368319.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;   
+}
+.square-3{
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    transition: .3s;
+    background: url("https://bcciplayerimages.s3.ap-south-1.amazonaws.com/bcci/story/1685111724_200x200_3741_1685111724.JPG");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;   
+}
+.square-4{
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    transition: .3s;
+    background: url("https://bcciplayerimages.s3.ap-south-1.amazonaws.com/bcci/story/1684936095_200x200_4639_1684936095.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;   
+}
+.square-5{
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    transition: .3s;
+    background: url("https://bcciplayerimages.s3.ap-south-1.amazonaws.com/bcci/story/1684852217_200x200_32984_1684852217.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;   
+}
+.square-6{
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    transition: .3s;
+    background: url("https://bcciplayerimages.s3.ap-south-1.amazonaws.com/bcci/story/1684680327_200x200_96112_1684680327.JPG");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;   
+}
+.square-7{
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    transition: .3s;
+    background-position: center;
+    background: url("https://bcciplayerimages.s3.ap-south-1.amazonaws.com/bcci/story/1684662186_200x200_37474_1684662186.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;   
+}
+.square-8{
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    transition: .3s;
+    background: url("https://bcciplayerimages.s3.ap-south-1.amazonaws.com/bcci/story/1684591111_200x200_73005_1684591111.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;   
+}
+.looking-for{
+    height: 30vh;
+    width: 100%;
+    background-image: url("https://www.iplt20.com/assets/images/wrulf-bg-1.svg"),url("https://www.iplt20.com/assets/images/wrulf-bg-2.png");
+    background-repeat: no-repeat;
+    background-position: right top,left bottom;
+    text-align: center;
+    padding-top: 22px;
+    font-family: 'Poppins',sans-serif;
+    font-style: italic;
+}
+.fixtures ul li:hover{
+    transform: scale(1.03);
+}
+.fixtures ul li{
+    transition: all 0.3s;
+}
+.fixtures ul{
+    max-width: 80vw;
+    position: relative;
+    margin: auto;
+    list-style: none;
+    padding: 35px 30px 0 30px;
+    gap: 80px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+.fixtures ul li a i{
+    padding-right: 5px;
+}
+.fixtures ul li a{
+    text-decoration: none;
+    font-size: 22px;
+    color: #11141c;
+    font-weight: 500;
+    font-family: 'Poppins';
+}
+.magic-moments-header{
+    background: #10172b;
+    height: 75vh;
+}
+.magic-moments{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    height: 69vh;
+    max-width: 90vw;
+}
+.magic-moment{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.magic-moment h2{
+    color: white;
+    margin-left: 20px;
+    font-style: italic;
+    font-weight: 600;
+    font-family: 'Poppins',sans-serif;
+}
+.see-more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.see-more img{
+    padding-right: 25px;
+}
+.see-more img:hover{
+    opacity: .75;
+    color: black;
+}
+.see-more button{
+    width: 100px;
+    padding: 8px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-right: 30px;
+    color: white;
+    background: #10172b;
+}
+
+/* magic moments */
+.elements{
+    display: flex;
+    width: 100%;
+    height: 90%;
+    gap: 20px;
+    flex-direction: row;
+    
+}
+.game-changer:hover{
+    transform: scale(1.03);
+}
+.grandstand:hover{
+    transform: scale(1.03);
+}
+.mohit-sharma:hover{
+    transform: scale(1.03);
+}
+.powerful-dube:hover{
+    transform: scale(1.03);
+}
+.game-changer{
+    border-radius: 12px;
+    display: flex;
+    width: 25%;
+    background-color: white;
+    height: 90%;
+    border: 1px solid white;
+    flex-direction: column;
+    transition: all .3s;
+}
+.grandstand{
+    border-radius: 12px;
+    transition: all .3s;
+    background-color: white;
+    display: flex;
+    width: 25%;
+    height: 90%;
+    border: 1px solid white;
+    flex-direction: column;
+}
+.mohit-sharma{
+    border-radius: 12px;
+    transition: all .3s ease;
+    background-color: white;
+    display: flex;
+    width: 25%;
+    height: 90%;
+    border: 1px solid white;
+    flex-direction: column;
+}
+.powerful-dube{
+    border-radius: 12px;
+    display: flex;
+    background-color: white;
+    transition: all .1s;
+    width: 25%;
+    height: 90%;
+    border: 1px solid white;
+    flex-direction: column;
+}
+.latest-videos .game-changer{
+    background-color: #19398a;
+    color: rgb(255 255 255 / 90%);
+    height: 97%;
+}
+.latest-videos .game-changer .eye{
+    color: rgb(255 255 255 / 50%);
+    border-top: 1px solid rgb(255 255 255 / 50%);
+    margin: 30px 12px 0;
+}
+.latest-videos .grandstand{
+    background-color: #19398a;
+    color: rgb(255 255 255 / 90%);
+    height: 97%;
+}
+.latest-videos .grandstand .eye{
+    color: rgb(255 255 255 / 50%);
+    border-top: 1px solid rgb(255 255 255 / 50%);
+    margin: 20px 12px;
+    padding: 12px 0 0 0;
+}
+.latest-videos .mohit-sharma{
+    background-color: #19398a;
+    color: rgb(255 255 255 / 90%);
+    height: 97%;
+}
+.latest-videos .mohit-sharma .eye{
+    color: rgb(255 255 255 / 50%);
+    border-top: 1px solid rgb(255 255 255 / 50%);
+    margin: 10px 12px;
+    padding: 10px 0;
+}
+.latest-videos .powerful-dube{
+    background-color: #19398a;
+    color: rgb(255 255 255 / 90%);
+    height: 97%;
+}
+.latest-videos .powerful-dube .eye{
+    color: rgb(255 255 255 / 50%);
+    border-top: 1px solid rgb(255 255 255 / 50%);
+    margin: 10px 12px;
+    padding: 10px 0;
+}
+.latest-news .game-changer{
+    background-color: #19398a;
+    color: rgb(255 255 255 / 90%);
+}
+.latest-news .game-changer .eye{
+    color: rgb(255 255 255 / 50%);
+    border-top: 1px solid rgb(255 255 255 / 50%);
+    margin: 8px 12px 0 12px;
+    padding: 10px 0;
+}
+.latest-news .grandstand{
+    background-color: #19398a;
+    color: rgb(255 255 255 / 90%);
+}
+.latest-news .grandstand .eye{
+    color: rgb(255 255 255 / 50%);
+    border-top: 1px solid rgb(255 255 255 / 50%);
+    margin: 8px 12px 0 12px;
+    padding: 10px 0;
+}
+.latest-news .mohit-sharma{
+    background-color: #19398a;
+    color: rgb(255 255 255 / 90%);
+}
+.latest-news .mohit-sharma .eye{
+    color: rgb(255 255 255 / 50%);
+    border-top: 1px solid rgb(255 255 255 / 50%);
+    margin: 8px 12px 0 12px;
+    padding: 10px 0;
+}
+.latest-news .powerful-dube{
+    background-color: #19398a;
+    color: rgb(255 255 255 / 90%);
+}
+.latest-news .powerful-dube .eye{
+    color: rgb(255 255 255 / 50%);
+    border-top: 1px solid rgb(255 255 255 / 50%);
+    margin: 28px 12px 0;
+    padding: 10px 0;
+}
+.image-1{
+    width: 100%;
+    height: 190px;
+    background-image: url("https://cf-images.eu-west-1.prod.boltdns.net/v1/static/3588749423001/2c7f4930-be56-4a57-ac5d-a1369e72cb3d/01226604-ee83-44fb-9ffa-a78a347af14c/1280x720/match/image.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 12px;
+}
+.image-1 img{
+    margin: 135px 20px;
+    height: 40px;
+}
+.image-2 img{
+    margin: 135px 20px;
+    height: 40px;
+}
+.image-3 img{
+    margin: 135px 20px;
+    height: 40px;
+}
+.image-4 img{
+    margin: 135px 20px;
+    height: 40px;
+}
+.latest-videos .image-1 img{
+    margin: 155px 20px;
+    height: 40px;
+}
+.latest-videos .image-2 img{
+    margin: 155px 20px;
+    height: 40px;
+}
+.latest-videos .image-3 img{
+    margin: 155px 20px;
+    height: 40px;
+}
+.latest-videos .image-4 img{
+    margin: 155px 20px;
+    height: 40px;
+}
+.image-2{
+    width: 100%;
+    height: 190px;
+    background-image: url("https://cf-images.eu-west-1.prod.boltdns.net/v1/static/3588749423001/1b1d2da2-69ed-4477-a89a-eb2820fee324/81d65fa2-409c-4b20-900b-50edc2076b27/1280x720/match/image.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 12px;
+}
+.image-3{
+    width: 100%;
+    height: 190px;
+    background-image: url("https://cf-images.eu-west-1.prod.boltdns.net/v1/static/3588749423001/62c05ada-682a-49ce-900f-f4aaa725649e/8e7a9de9-75f1-4672-8f42-96f11aa83385/1280x720/match/image.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 12px;
+}
+.image-4{
+    width: 100%;
+    height: 190px;
+    background-image: url("https://cf-images.eu-west-1.prod.boltdns.net/v1/static/3588749423001/e293e7bb-72a0-480a-8599-57a1360a8871/44b2b196-d93c-4089-82cc-b689c61743ab/1280x720/match/image.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 12px;
+}
+.latest-videos .image-1{
+    background: url("https://bcciplayerimages.s3.ap-south-1.amazonaws.com/bcci/videos/1703399918_WhatsApp%20Image%202023-12-24%20at%2012.07.50%20PM.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 210px;
+}
+.latest-videos .image-2{
+    background: url("https://bcciplayerimages.s3.ap-south-1.amazonaws.com/bcci/videos/1703480572_WhatsApp%20Image%202023-12-25%20at%2010.17.06%20AM.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 210px;
+}
+.latest-videos .image-3{
+    background: url("https://cf-images.eu-west-1.prod.boltdns.net/v1/static/3588749423001/68d3d7e4-8c1a-4bdb-9c39-45c620f0ae4f/65dd936c-276d-475b-bbec-bf1b2f6090e0/1280x720/match/image.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 210px;
+}
+.latest-videos .image-4{
+    background: url("https://cf-images.eu-west-1.prod.boltdns.net/v1/static/3588749423001/05d44278-a452-42fe-a958-dbc7a4265ab0/ae7df265-b413-4133-a533-69efdfef6b9b/1280x720/match/image.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 210px;
+}
+.latest-news .image-1{
+    background: url("https://assets.iplt20.com/bcci/articles/1702396026_BCCI%20_%20Website%20Thumbnail.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.latest-news .image-2{
+    background: url("https://assets.iplt20.com/bcci/articles/1702306571_WhatsApp%20Image%202023-12-11%20at%2018.56.04.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.latest-news .image-3{
+    background: url("https://assets.iplt20.com/bcci/articles/1701069969_Green%20Yellow%20Simple%20World%20Travel%20YouTube%20Thumbnail.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.latest-news .image-4{
+    background: url("https://assets.iplt20.com/bcci/articles/1701011048_Singh97_0326.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.share-btn{
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+}
+.latest-videos .grandstand .share-btn{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+.latest-videos .game-changer .share-btn{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+.latest-videos .mohit-sharma .share-btn{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+.latest-videos .powerful-dube .share-btn{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+.share-btn h2{
+    font-size: 18px;
+    font-family: 'Rubik',sans-serif;
+}
+.share-btn img{
+    height: 40px;
+}
+.eye{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 15px;
+    padding: 8px 0 0 0;
+    font-size: 11px;
+    align-items: center;
+    color: rgba(17 20 28 / 70%);
+    font-family: 'Poppins',sans-serif;
+    border-top: 1px solid rgba(17 20 28 / 70%);
+}
+.mohit-sharma .eye{
+    margin: 20px 15px;
+}
+.points-table{
+    width: 100%;
+    height: 650px;
+    background-image: url("https://www.iplt20.com/assets/images/wrulf-bg-1.svg"),url("https://www.iplt20.com/assets/images/wrulf-bg-2.png");
+    background-position: right top,left bottom;
+    background-repeat: no-repeat;
+}
+.points-tables{
+    max-width: 90vw;
+    height: 650px;
+    margin: auto;
+}
+.full-points-table{
+    margin-top: 20px;
+    height: 60px;
+    width: 100%;
+    background: url(https://scores.iplt20.com/ipl/images/floral-line.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.full{  
+    cursor: pointer;
+    background: #1d2e71;
+    border-radius: 4px;
+    transform: skewX(-18deg);
+    padding: 12px 20px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    font-family: 'Rubik', sans-serif; 
+    z-index: 1;
+    position: relative;
+}
+.full-table{
+    border: 2px solid black;
+    border-radius: 5px;
+    transform: skewX(-18deg);
+    height: 45px;
+    margin: 0 0 10px 16px;
+    width: 17vw;
+    position: absolute;
+}
+.full i{
+    padding-left: 8px;
+    color: #1d2e71;
+}
+.full:hover i{
+    transition: all 0.8s ease-out ;
+    color: white;
+    font-size: 17px;
+}
+.teams-individual{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-left: 15px;
+    overflow: hidden;
+}
+.gujrat-titans{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 400px;
+    border-radius: 12px;
+    border: 1px solid #d9d9d9;
+    padding: 16px 10px;
+    transition: all .3s;
+}
+.chennai-super-kings{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 400px;
+    border-radius: 12px;
+    border: 1px solid #d9d9d9;
+    padding: 16px 10px;
+    transition: all .3s;
+    z-index: 1;
+}
+.lucknow-super-giants{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 400px;
+    border-radius: 12px;
+    border: 1px solid #d9d9d9;
+    padding: 16px 10px;
+    transition: all .3s;
+}
+.mumbai-indians{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 400px;
+    border: 1px solid #d9d9d9;
+    border-radius: 12px;
+    padding: 16px 10px;
+    transition: all .3s;
+}
+.gujrat-titans:hover{
+    transform: scale(1.03);
+    box-shadow: 0 4px 8px 0 hsl(0deg 0% 7% / 50%);
+}
+.chennai-super-kings:hover{
+    transform: scale(1.03);
+    box-shadow: 0 4px 8px 0 hsl(0deg 0% 7% / 50%);
+}
+.mumbai-indians:hover{
+    transform: scale(1.03);
+    box-shadow: 0 4px 8px 0 hsl(0deg 0% 7% / 50%);
+}
+.lucknow-super-giants:hover{
+    transform: scale(1.03);
+    box-shadow: 0 4px 8px 0 hsl(0deg 0% 7% / 50%);
+}
+.pt{
+    padding-bottom: 0px;
+    height: 90px;
+}
+.name{
+    width: 100%;
+    height: 80px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+.name p{
+    font-weight: 400;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    margin-left: 10px;
+    text-align: left;
+    font-family: 'Poppins',sans-serif;
+    transform: translateY(4px);
+}
+.one{
+    position: relative;
+    z-index: 1;
+    font-weight: 400;
+    font-size: 65px;
+    line-height: 65px;
+    text-shadow: 3px -2px 0 #d9d9d9;
+}
+.q{
+    background-position: center center;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-image: url("https://scores.iplt20.com/ipl/mc/images/qualified-home.png");
+    background-size: 24px; 
+    margin-left: auto; 
+    margin-top: 70px;
+    position: absolute;
+    margin-left: 10px;
+}
+.gujrat{
+    margin-left: 55px;
+    width: 105px;
+    height: 105px;
+    background: url("https://scores.iplt20.com/ipl/teamlogos/GT.png?v=1");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat; 
+    margin-bottom: 12px;
+}
+.chennai{
+    margin-left: 55px;
+    margin-bottom: 12px;
+    width: 105px;
+    height: 105px;
+    background: url("https://scores.iplt20.com/ipl/teamlogos/CSK.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat; 
+}
+.lucknow{
+    margin-left: 55px;
+    width: 105px;
+    margin-bottom: 12px;
+    height: 105px;
+    background: url("https://feeds-100mb.s3-ap-southeast-1.amazonaws.com/teamLogos/ADAMetmKk61682948573LSG.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat; 
+}
+.mumbai{
+    margin-bottom: 12px;
+    margin-left: 55px;
+    width: 105px;
+    height: 105px;
+    background: url("https://scores.iplt20.com/ipl/teamlogos/MI.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat; 
+}
+.records{
+    width: 100%;
+    height: 60px;
+    border-top: 1px solid #d9d9d9;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.point{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.point h3{
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    line-height: 29px;
+    color: #11141c;
+}
+.point p{
+    font-family: 'Rubik',sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #7f8184;
+} 
+.g h3{
+    font-weight: 500;
+    color: #2a841b;
+}
+.recent-form{
+    width: 100%;
+    height: 85px;
+    padding-left: 10px;
+}
+.recent-form p{
+    font-size: 16px;
+    color: #11141c;
+    margin-block-end: 10px;
+    text-align: left;
+    font-weight: 400;
+    padding-top: 30px;
+    font-family: 'Rubik',sans-serif;
+}
+.circle-form{
+    padding-top: 0px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+} 
+.circle{
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Poppins';
+}
+.green{
+    border: 1px solid green;
+    color: green;
+}
+.red{
+    border: 1px solid red;
+    color: red;
+} 
+/* top performancess */
+.top-performances{
+    height: 120vh; 
+    background: url("https://scores.iplt20.com/ipl/images/tp-bg-patter-left.png") left no-repeat,url("https://scores.iplt20.com/ipl/images/tp-bg-patter-right.png") right no-repeat #10172b;
+}
+.top-performances .magic-moments{
+    display: flex; 
+     flex-direction: column;
+     height: 100%;
+     width: 80%;
+}
+.top-performances .performers .image img{
+    height: 320px;
+    border: none;
+    margin: 50px 0 0 0;
+}
+.performers{
+    color: white;
+    display: flex;
+    height: 70vh;
+    width: 65vw;
+    margin: auto;
+}
+.cap-1{
+    height: 40px;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    font-family: 'Robik',sans-serif;
+    font-style: italic;
+    width: 150px;
+    border-radius: 4px;
+    border: 1px solid white;
+    margin: 55px 0 0 40px;
+    padding: 8px;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+}
+.details .gill{
+    display: flex;
+    flex-direction: row;
+}
+.details .gill .shubman{
+    padding-top: 30px;
+    line-height: 50px;
+}
+.details .gill .shubman .runs{
+    padding-top: 30px;
+    line-height: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: baseline;
+}
+.details .gill .shubman .runs h2{
+    font-size: 60px;
+    line-height: 60px;
+    color: #dc5034;
+    font-weight: 600;
+}
+.details .gill .shubman .runs p{
+    font-family: 'Rubik',sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.details .gill h1:first-child{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 220px;
+}
+.details .gill h1:nth-child(2){
+    font-family: 'Poppins', Helvetica, sans-serif;
+    font-size: 80px;
+}
+.perfomer-record{
+    padding: 14px 0;
+    border: 1px solid rgba(218,218,218,.25);
+    margin-inline-start: 90px;
+    font-family: 'Poppins',sans-serif;
+    width:300px;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    text-align: center;
+}
+.perfomer-record p:nth-child(2){
+    color: rgba(255,255,255,.6);
+}
+.full-leaderboard{
+    width: 250px;
+    margin-top: 60px;
+    transition: .5s;
+    text-decoration: none;
+    line-height: 18px;
+    font-style: normal;
+    font-weight: 600;
+    font-family: 'Poppins',sans-serif;
+    font-size: 18px;
+    transform: skewX(-20deg);
+    position: relative;
+    background: #dc5034;
+    padding: 16px 0 16px 30px;
+    gap: 10px;
+    border-radius: 4px;
+    display: flex;
+}
+.full-leaderboard i{
+    color: #dc5034;
+}
+.full-leaderboard:hover i{
+    color: white;
+    transition: .5s ease;
+}
+
+
+
+
+
+/* 2023 In Numbers */
+.in-numbers{
+    width: 100%;
+    height: 110vh;
+    background-repeat: no-repeat;
+    background-image: url("https://www.iplt20.com/assets/images/2023-bg.svg");
+    background-position: center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #10172b;
+    padding-top: 40px;
+}
+.numbers{
+    margin-top: 25%;
+    padding: 38px 20px 40px;
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    max-width: 85vw;
+    margin: auto;
+    gap: 16px;
+    padding: 10px 0 10px 0;
+}
+.in-numbers h2{
+    color: white;
+    font-family: 'Poppins',sans-serif;
+    font-size: 25px;
+    font-style: italic;
+    margin: 0 0 10px 60px;
+}
+.section-1{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    gap: 18px;
+}
+.section-2{
+    gap: 18px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.section-3{
+    gap: 18px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.winners{
+    margin: 0;
+    width: 50%;
+    height: 100%;
+}
+.winners .img-slider{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-left: 0;
+}
+.img-slider .slide{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    clip-path: circle(0.5% at 0 51%);
+}
+.img-slider .slide.active{
+    clip-path: circle(150% at 0 50%);
+    transition: 2s;
+    transition-property: clip-path;
+}
+.img-slider .slide img{
+    z-index: 1;
+    width: 100%;
+    height: 180px;
+    border-radius: 15px;
+}
+.winners .img-slider .navigation{
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.img-slider .navigation .btn{
+    background: rgba(255, 255, 255, 0.5);
+    width: 8px;
+    height: 8px;
+    margin: 4px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.img-slider .navigation .btn.active{
+    background: #ffffff;
+    box-shadow: 0 0 2px rgba(0,0,0,0.5);
+}
+.cap{
+    width: 551px;
+    height: 100%;
+    background: url("https://www.iplt20.com/assets/images/orange-cap-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-color: #dc5034;
+    border-style: solid;
+    border-width: 0 0 2px 2px;
+    border-radius: 10px;
+}
+.awards{
+    width: 551px;
+    height: 100%;
+    background: url("https://www.iplt20.com/assets/images/paytm-cap-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-color: #dc5034;
+    border-style: solid;
+    border-width: 0 0 2px 2px;
+    border-radius: 10px;
+
+}
+.pics{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 17%;
+    height: 100%;
+    background: linear-gradient(58.2deg,#001a58 -.03%,#004a8c 100.03%);
+    border-color: #004a8c;
+    border-width: 0 0 2px 2px;
+    border-style: solid;
+    box-shadow: 0 8px 16px rgba(0,0,0,.24);
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    color: white;
+}
+.interesting-fact{
+    width: 51%;
+    height: 100%;
+    padding: 2% 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(75.19deg,#282968 0,#f58220 100%);
+    border-width: 0 0 2px 2px;
+    border-style: solid;
+    box-shadow: 0 8px 16px rgba(0,0,0,.24);
+    border-radius: 10px;
+    border-color: #f58220;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    color: white;
+}
+.interesting-fact p{
+    font-family: 'Rubik', sans-serif;
+    font-size: 17px;
+}
+.match-report{
+    width: 17%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-width: 0 0 2px 2px;
+    border-style: solid;
+    border-color: #c6168d;
+    background: linear-gradient(58.2deg,#001a58 -.03%,#c6168d 100.03%);
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,.24);
+    cursor: pointer;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    color: white;
+}
+.highlight{
+    width: 17%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(58.2deg,#001a58 -.03%,#c6168d 100.03%);
+    border-color: #c6168d;
+    border-width: 0 0 2px 2px;
+    border-style: solid;
+    box-shadow: 0 8px 16px rgba(0,0,0,.24);
+    border-radius: 10px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    color: white;
+}
+.section-3 p{
+    cursor: pointer;
+    padding-top: 20px;
+}
+.century{
+    border-radius: 10px;
+    width: 25%;
+    height: 100%;
+    background: linear-gradient(58.2deg,#0038ff -.03%,#1abcfe 100.03%);
+    position: relative;
+}
+.bouderies{
+    width: 25%;
+    height: 100%;
+    background: linear-gradient(58.2deg,#0038ff -.03%,#1abcfe 100.03%);
+    border-radius: 10px;
+    position: relative;
+}
+.img-slider{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.img-slider .slide_1{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    clip-path: circle(0.5% at 0 51%);
+}
+.img-slider .slide_1.active_1{
+    clip-path: circle(150% at 0 50%);
+    transition: 2s;
+    transition-property: clip-path;
+}
+.img-slider .slide_1 img{
+    z-index: 1;
+    width: 100%;
+    border-radius: 15px;
+}
+.img-slider .slide_1 .info{
+    position: absolute;
+    top: 0;
+}
+.img-slider .slide_1 .info h2{
+    color: white;
+    font-size: 55px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 800;
+    margin: 30px 60px 0 70px;
+}
+.img-slider .slide_1 .info p{
+    margin: 0 80px 0 80px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    width: 60%;
+    border-radius: 5px;
+    font-family: 'Rubik',sans-serif;
+    margin-left: 60px;
+}
+.img-slider .slide_2{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    clip-path: circle(0.5% at 0 51%);
+}
+.img-slider .slide_2.active_2{
+    clip-path: circle(150% at 0 50%);
+    transition: 2s;
+    transition-property: clip-path;
+}
+.img-slider .slide_2 img{
+    z-index: 1;
+    width: 100%;
+    border-radius: 15px;
+}
+.img-slider .slide_2 .info h2{
+    color: white;
+    font-size: 55px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 800;
+    margin: 30px 60px 0 70px;
+}
+.img-slider .slide_2 .info p{
+    margin: 0 80px 0 80px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    width: 60%;
+    border-radius: 5px;
+    margin-left: 60px;
+    font-family: 'Rubik',sans-serif;
+}
+.img-slider .navigation{
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    bottom: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.img-slider .navigation .btn_1{
+    background: rgba(255, 255, 255, 0.5);
+    width: 10px;
+    height: 10px;
+    margin: 4px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.img-slider .navigation .btn_1.active_1{
+    background: #ffffff;
+    box-shadow: 0 0 2px rgba(0,0,0,0.5);
+}
+.img-slider .navigation .btn_2{
+    background: rgba(255, 255, 255, 0.5);
+    width: 10px;
+    height: 10px;
+    margin: 4px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.img-slider .navigation .btn_2.active_2{
+    background: #ffffff;
+    box-shadow: 0 0 2px rgba(0,0,0,0.5);
+}
+
+
+/* Results */
+.results{
+    border: 2px solid red;
+    width: 100%;
+    height: 120vh;
+    background-image: url("https://scores.iplt20.com/ipl/images/result_widget_bg.png");
+    background-position: center;
+    z-index: -1;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.result{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    justify-content: space-around;
+    padding-left: 420px;
+}
+.section1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* align-items: center; */
+    width: 30vw;
+    height: 70vh;
+    background-color: white;
+    border-radius: 20px;
+}
+.section1 .sec1{
+    height: 30px;
+    padding: 5px 15px;
+    width: 65px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 500;
+    transition: all 0.5s;
+    background-color: #3E3E3E;
+    transform: translateX(-10px) translateY(-10px) skewX(-20deg);
+}
+.scores{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* padding-top: 25px; */
+    gap: 10px;
+    border-bottom: 1px solid rgb(52, 50, 50);
+    color: black;
+}
+.section1 .scores img{
+    height: 30px;
+}
+.section1 .vs{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px 10px 0 10px;
+}
+.section1 .score p{
+    color: #777777;
+    font-size: 13px;
+}
+.section1 .score h2{
+    color: #000;
+    font-size: 32px;
+}
+.section1 .logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: url("https://scores.iplt20.com/ipl/playerimages/601.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.section1 .player-match{
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+.section1 .winner{
+    border-bottom: 1px solid #777777;
+    padding: 10px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.result .img img{
+    height: 25px;
+    margin: 10px 5px;
+}
+.result .img .rotate{
+    transform: rotate(180deg);
+}
+.result .result-1{
+    border: 2px solid white;
+    padding: 12px;
+    font-size: 20px;
+}
+.result .see-more p{
+    padding: 7px 10px;
+    border-radius: 6px;
+    border: 1px solid white;
+}
+.box{
+    background-color: #10172b;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.section1 .sec2{
+    height: 40px;
+    width: 260px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Rubik',sans-serif;
+    margin: auto;
+    transform: translateY(70px) skewX(-15deg);
+    transition: all 0.5s;
+}
+.section1 .sec2 i{
+    padding-left: 5px;
+}
+
+
+
+/* Get Apps */
+.get-apps{
+    width: 100%;
+    height: 75vh;
+    background: #10172B;
+    padding-top: 120px;
+}
+.get-app{
+    background: url("https://www.iplt20.com/assets/images/official-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 115%;
+    background-color: #11141c;
+    display: flex;
+    flex-direction: row;
+}
+.offical{
+    width: 37%;
+    height: 50vh;
+    margin: 0 0 0 70px;
+    color: white;
+    padding-top: 15px;
+}
+.hand{
+    overflow: hidden;
+}
+.hand img{
+    height: 60vh;
+    margin-left: 140px;
+    padding-bottom: 25px;
+}
+.offical h1{
+    padding: 20px 0 20px 0;
+    font-size: 38px;
+}
+.offical p{
+    padding: 0 0 18px 0;
+    font-size: 16px;
+    line-height: 1.5rem;
+    font-family: 'Rubik', sans-serif;
+}
+.image img{
+    max-width: 100%;
+    border-radius: 5px;
+    margin-right: 20px;
+    border: 1px solid #9b9b9b;
+}
+/* Sub Footer */
+.sub-footer-back{
+    background: url("https://www.iplt20.com/assets/images/foooter-bg.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: #11141c;
+}
+.sub-footer{
+    max-width: 90vw;
+    margin: auto;
+    height: 80vh;
+    display: flex;
+    padding: 20px 0 0 0;
+    gap: 10px;
+    flex-direction: row;
+    text-align: left;
+}
+.sub-footer a{
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 400;
+    color: rgba(255,255,255,.6);
+    text-transform: capitalize;
+}
+.sub-footer a:hover{
+    text-decoration: underline;
+}
+.teams{
+    width: 22%;
+    padding: 40px 0 0 25px;
+}
+.about{
+    width: 30%;
+    padding: 40px 0 0 0;
+}
+.guidlines{
+    padding: 40px 0 0 0;
+    width: 28%;
+}
+.contact{
+    padding: 40px 0 0 0;
+    width: calc(10%-30px);
+}
+.team{
+    color: #fff;
+    font-size: 22px;
+    margin-bottom: 15px;
+    font-family: 'BebasNeueRegular','Poppins';
+    font-weight: 700;
+}
+.sub-footer ul{
+    list-style: none;
+}
+.sub-footer ul li{
+    padding: 10px 0;
+}
+/* Footer */
+.footer{
+    width: 100%;
+    height: 10.5vh;
+    background: rgb(0 0 0 / 60%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+}
